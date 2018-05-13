@@ -1,0 +1,17 @@
+node{
+    
+   
+    parallel firstBranch: {
+       stage('one'){
+           
+           git url: 'https://github.com/mahendra-deepalu/jenkins-parallel' , branch: 'master'
+       }
+    }, secondBranch: {
+       stage('second'){
+           
+           git url: 'https://github.com/mahendra-deepalu/jenkins-parallel' , branch: 'sample'
+       }
+    },
+    failFast: true
+    
+}
