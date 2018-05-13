@@ -12,6 +12,6 @@ node{
            git url: 'https://github.com/mahendra-deepalu/jenkins-parallel' , branch: 'sample'
        }
     },
-    failFast: true
+    failFast: false
     
 }
